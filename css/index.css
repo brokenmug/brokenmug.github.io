@@ -30,12 +30,7 @@ body {
     justify-content: center; 
     flex-direction: column;
 
-    -webkit-animation-name: pulse; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite;
-    animation-name: pulse;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation: pulse 3s ease-in 1s infinite alternate;
     background-color: #ffffff;          /* Static color for unsupported browsers */
     background-image: radial-gradient(circle, #fff 50%, #e6e1d5);
 }
