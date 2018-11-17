@@ -42,7 +42,6 @@ body {
     from {opacity: 1;}
     to {opacity: 0;}
 }
-
 /* Standard syntax */
 @keyframes pulse-opacity {
     from {opacity: 1;}
@@ -60,4 +59,19 @@ body {
     margin: auto;
     padding: 5px;
     width: 75vw;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fall {
+    from {top: 0;}
+    to {top: 10;}
+}
+/* Standard syntax */
+@keyframes fall {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+.arrow {
+    position: relative;
+    animation: fall 1s ease-in 2s infinite alternate;
 }
