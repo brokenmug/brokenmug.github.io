@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 
     <title>Broken Mug - Game studio</title>
   </head>
 </html>
 
 <body>
-    <div class="container section" style="display: flex; justify-content: center; flex-direction: column;">
+    <section class="container section">
         <img src="images/logo.jpeg" style="width: 300px; align-self: center" id="logo">
         <p style="color: dodgerblue">GAME STUDIO</p>
         <p><i class="fas fa-angle-double-down arrow"></i></p>
-    </div>
-    <div class="footer">
+    </section>
+
+    <section class="newsletter">
+        <h1>Subscribe to our newsletter!</h1>
+        <div class="form-inline form">
+            <div class="form-group mx-sm-3 mb-2 form-email">
+                <label for="inputEmail" class="sr-only">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <button class="btn btn-primary mb-2 subscribe">Subscribe!</button>
+        </div>
+    </section>
+
+    <section class="footer">
         <div class="container social">
             <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
             <a href="https://www.facebook.com/brokenmug/"><i class="fab fa-facebook"></i> Facebook</a>
             <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
         </div>
-    </div>
+        <span>Broken Mug 2018 - all rights reserved.</span>
+    </section>
 </body>
 </html>
