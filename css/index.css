@@ -1,0 +1,54 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pulse {
+    from {background-image: radial-gradient(circle, #fff 50%, #e6e1d5);}
+    to {background-color: radial-gradient(circle, #fff 20%, #e6e1d5);}
+}
+
+/* Standard syntax */
+@keyframes pulse {
+    from {background-image: radial-gradient(circle, #ffffff 50%, #f1ede3);}
+    to {background-color: radial-gradient(circle, #ffffff 20%, #f1ede3);}
+}
+.section {
+    padding-top: 30px;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: #555;
+
+    -webkit-animation-name: pulse; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: #ffffff;          /* Static color for unsupported browsers */
+    background-image: radial-gradient(circle, #fff 50%, #e6e1d5);
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pulse-opacity {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes pulse-opacity {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+#logo {
+    animation: pulse-opacity 3s ease-in 2s infinite alternate;
+    opacity: 1; 
+}
