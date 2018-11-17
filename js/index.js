@@ -9,5 +9,9 @@ $(document).ready(function() {
             $(this).parent().parent().append('<span style="color: lavender">Just kidding, this is just a test :D</span>');
         }
     });
+
+    $('.carousel').carousel({
+        interval: 2000
+    });
 });
 
